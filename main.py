@@ -1,5 +1,5 @@
 from operation import ImageOperation
-from utils import resize_image
+from utils.resize import resize_image
 
 
 a=ImageOperation("test_image\d41586-020-01430-5_17977554.jpg")

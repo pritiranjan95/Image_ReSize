@@ -1,5 +1,5 @@
 from PIL import Image
-from utils import resize_image
+from utils.resize import resize_image
 import os
 
 
