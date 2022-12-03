@@ -15,7 +15,7 @@ class  ImageOperation:
         for i,dimension in enumerate(dimensions):
             resized_image = resize_image(image,dimension)
             resized_image_name= os.getcwd()+"\Resized_image\\"+"new"+str(i)+".jpg"
-            print("image path: ",resized_image_name)
+            # print("image path: ",resized_image_name)
             resized_image.save(resized_image_name)
             all_resized_images.append(resized_image_name)
         return all_resized_images

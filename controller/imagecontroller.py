@@ -5,10 +5,9 @@ from  operation import ImageOperation
 router=APIRouter()
 
 @router.post("/home/")
-def show(image: UploadFile,dim:str | None=None ):
+def show(image: UploadFile, dimention):
 
-    # a=ImageOperation(image.filename)
-    # new_image=a.get_resized_image(dimention)
-    return {"file name":image.filename}
-
-    
+    a=ImageOperation(image.filename)
+    new_image=a.get_resized_image(dimention)
+    return new_image
+    # return {"file name":image.filename} 
