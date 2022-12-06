@@ -1,8 +1,8 @@
-from operation import ImageOperation
+from service.operation import ImageOperation
 from utils.resize import resize_image
 from fastapi import FastAPI, APIRouter
 
-from controller import imagecontroller
+from controller import imagecontroller, fixedcontroller
 
 #For testing we can use the below one.    
 
@@ -13,7 +13,9 @@ from controller import imagecontroller
 
 
 
+
 #Now do it in api, Take the data from the user.
 
 app=FastAPI()
 app.include_router(imagecontroller.router)
+app.include_router(fixedcontroller.router)
