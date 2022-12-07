@@ -1,0 +1,1 @@
+In this program you can resize a given image to different fixed sizes. You can also customize the sizes as your requirments. 
